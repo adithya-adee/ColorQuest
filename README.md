@@ -16,7 +16,7 @@ ColorQuest is a dynamic color picker application built using Svelte and HTML5 Ca
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/colorquest.git
+https://github.com/adithya-adee/ColorQuest.git
 cd colorquest
 npm install
 npm run dev
