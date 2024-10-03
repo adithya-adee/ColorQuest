@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import convert from "color-convert"; // Assuming color-convert is properly installed
+  import convert from "color-convert";
 
   let canvas, preview, huePicker;
   let pickedHue = 0;
@@ -33,6 +33,7 @@
 
       // Update preview background with the selected color
       preview.style.background = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+      hex = convert.rgb.hex(rgb); // Update the hex code based on RGB
     });
   }
 
@@ -43,14 +44,12 @@
     ctx.fillStyle = color;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Apply saturation gradient
     const saturationGradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
     saturationGradient.addColorStop(0, "white");
     saturationGradient.addColorStop(1, "transparent");
     ctx.fillStyle = saturationGradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Apply lightness gradient
     const lightnessGradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     lightnessGradient.addColorStop(0, "transparent");
     lightnessGradient.addColorStop(1, "black");
@@ -70,6 +69,7 @@
   function updateColorFromHex(value) {
     try {
       rgb = convert.hex.rgb(value.replace("#", ""));
+      preview.style.background = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
     } catch {
       // Ignore invalid input
     }
@@ -208,6 +208,7 @@
   .preview {
     height: 100px;
     border: 1px solid black;
+    background-color: rgb(255, 0, 0); /* Initial background color set to red */
   }
 
   .container {
