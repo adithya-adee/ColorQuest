@@ -14,10 +14,10 @@ ColorQuest is a dynamic color picker application built using Svelte and HTML5 Ca
 ## Installation
 
 Clone this repository to your local machine:
+You can type the following command in your terminal and select the folder which you want to clone this repo. Then enter the following commands
 
 ```bash
-https://github.com/adithya-adee/ColorQuest.git
-cd colorquest
+git clone https://github.com/adithya-adee/ColorQuest.git
 npm install
 npm run dev
 ```
