@@ -10,7 +10,7 @@
   // Updates all color formats when the RGB color changes
   $: updateFormats(rgb);
 
-  // Ensures the canvas is properly initialized when mounted
+  // canvas initialization
   onMount(() => {
     const box = canvas.getBoundingClientRect();
     canvas.width = box.width;
@@ -27,7 +27,7 @@
       const x = Math.floor(e.clientX - box.left);
       const y = Math.floor(e.clientY - box.top);
 
-      // Get color data from the canvas at the current mouse position
+      // Get color data from the canvas at the current mouse position using mousemove DOM element
       const { data } = ctx.getImageData(x, y, 1, 1);
       rgb = [data[0], data[1], data[2]];
 
