@@ -1,60 +1,42 @@
-# Task ID: ColorQuest
+# ColorQuest
 
-# create-svelte
+ColorQuest is a dynamic color picker application built using Svelte and HTML5 Canvas. It allows users to select colors by pointing the mouse at specific pixels in the color selection area and to adjust colors by changing the hex code. The application updates the preview in real-time as the hex code changes or the user interacts with the canvas.
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Features
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+- **Interactive Color Picker**: Select colors by hovering over the canvas with your mouse.
+- **Hex Code Input**: Change the color of the preview div by editing the hex code.
+- **Real-time Updates**: Automatically update the color across multiple formats (RGB, HSL, HSV, CMYK) when a color is selected.
+- **Svelte-based**: Leverages the reactivity of Svelte for an optimized, performant color picking experience.
+- **Canvas-based Rendering**: Uses the HTML5 canvas element to render the color picker, ensuring smooth interaction and rendering of the color gradients.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone this repository to your local machine:
 
 ```bash
+git clone https://github.com/yourusername/colorquest.git
+cd colorquest
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+# Usage
+Move your mouse over the canvas to select a color.
+Change the hex code directly in the input field to update the preview color.
+The color updates across different formats including RGB, HSL, HSV, and CMYK.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Building
+# References
+1. Svelte Documentation 
+- https://svelte.dev/docs/introduction
+-https://www.youtube.com/watch?v=zojEMeQGGHs&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO
+2. HTML5 Canvas Documentation
+  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
+3. Color Conversion Library
+  - https://www.npmjs.com/package/color-convert  
 
-To build your library:
-
-```bash
-npm run package
-```
-
-To create a production version of your showcase app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+# Acknowledgments
+Special thanks to my friend for inspiring this project and helping me in Canvas.
