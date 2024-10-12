@@ -11,7 +11,7 @@ ColorQuest is a dynamic color picker application built using Svelte and HTML5 Ca
 - **Canvas-based Rendering**: Uses the HTML5 canvas element to render the color picker, ensuring smooth interaction and rendering of the color gradients.
 
 ## Link to the Screen Recording
-<a href="./video/screenRecord.mkv"></a>
+[![Watch the video](https://github.com/adithya-adee/ColorQuest/blob/main/video/screenRecord.mkv)
 
 ## Installation
 
