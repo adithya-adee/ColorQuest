@@ -8,7 +8,7 @@
   let hex, hsl, hsv, cmyk;
 
   // Updates all color formats when the RGB color changes
-  $: updateFormats(rgb);
+  $: updateFormats(rgb, preview);
 
   // canvas initialization
   onMount(() => {
@@ -70,9 +70,7 @@
     try {
       rgb = convert.hex.rgb(value.replace("#", ""));
       preview.style.background = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
-    } catch {
-      // Ignore invalid input
-    }
+    } catch {}
   }
 
   function updateColorFromRgb(value) {
