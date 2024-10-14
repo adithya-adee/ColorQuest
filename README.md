@@ -10,7 +10,6 @@ ColorQuest is a dynamic color picker application built using Svelte and HTML5 Ca
 - **Svelte-based**: Leverages the reactivity of Svelte for an optimized, performant color picking experience.
 - **Canvas-based Rendering**: Uses the HTML5 canvas element to render the color picker, ensuring smooth interaction and rendering of the color gradients.
 
-
 ## Installation
 
 Clone this repository to your local machine:
@@ -40,3 +39,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 # Acknowledgments
 Special thanks to my friend for inspiring this project and helping me in Canvas.
+
+## Link to the Screen Recording
+
+
+https://github.com/user-attachments/assets/f52c1275-a4ac-457b-8174-07e8da9c1bc0
+
+
