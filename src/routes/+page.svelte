@@ -8,7 +8,7 @@
   let hex, hsl, hsv, cmyk;
 
   // Updates all color formats when the RGB color changes
-  $: updateFormats(rgb, preview);
+  $: updateFormats(rgb);
 
   // canvas initialization
   onMount(() => {
